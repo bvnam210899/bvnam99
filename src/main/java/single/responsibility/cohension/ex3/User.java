@@ -7,7 +7,7 @@ class User {
         try {
             db.Add(postMessage);
         } catch (Exception ex) {
-            db.logError("An error occured: ", ex.toString());
+            ErrorLogging.logError("An error occured: ", ex.toString());
             FileUtil.writeAllText("LocalErrors.txt", ex.toString());
         }
     }

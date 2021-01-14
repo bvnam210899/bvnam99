@@ -1,10 +1,6 @@
 package isp;
 
-public class Bird implements Animal {
-    @Override
-    public void walk() {
-        System.out.println("bird can walk");
-    }
+public class Bird implements IBird {
 
     @Override
     public void fly() {
